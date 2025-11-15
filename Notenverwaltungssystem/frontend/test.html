@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Notenverwaltungssystem</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <h1>Notenverwaltungssystem</h1>
+        <a href="#dashboard">Dashboard</a>
+        <a href="#students">Schülerliste</a>
+        <a href="#add-student">Schüler hinzufügen</a>
+        <a href="#grades">Noten verwalten</a>
+    </nav>
+
+    <!-- Dashboard -->
+    <section id="dashboard">
+        <h2>Dashboard</h2>
+        <p>Willkommen im Notenverwaltungssystem. Wählen Sie oben eine Aktion aus.</p>
+    </section>
+
+    <!-- Schülerliste -->
+    <section id="students">
+        <h2>Alle Schüler</h2>
+
+        <table border="1" cellpadding="10">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Klasse</th>
+                    <th>Aktion</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Max Mustermann</td>
+                    <td>9A</td>
+                    <td><button>Details</button></td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>Lisa Müller</td>
+                    <td>9B</td>
+                    <td><button>Details</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Schüler hinzufügen -->
+    <section id="add-student">
+        <h2>Neuen Schüler hinzufügen</h2>
+
+        <form>
+            <label>Vorname:</label><br>
+            <input type="text" name="vorname"><br><br>
+
+            <label>Nachname:</label><br>
+            <input type="text" name="nachname"><br><br>
+
+            <label>Klasse:</label><br>
+            <input type="text" name="klasse"><br><br>
+
+            <button type="submit">Schüler anlegen</button>
+        </form>
+    </section>
+
+    <!-- Noten verwalten -->
+    <section id="grades">
+        <h2>Noten verwalten</h2>
+
+        <form>
+            <label>Schüler auswählen:</label><br>
+            <select>
+                <option>Max Mustermann</option>
+                <option>Lisa Müller</option>
+            </select><br><br>
+
+            <label>Fach:</label><br>
+            <select>
+                <option>Mathe</option>
+                <option>Deutsch</option>
+                <option>Englisch</option>
+            </select><br><br>
+
+            <label>Note:</label><br>
+            <input type="number" min="1" max="6"><br><br>
+
+            <button type="submit">Note speichern</button>
+        </form>
+    </section>
+
+    <script src="test1.js"></script>
+</body>
+</html>
