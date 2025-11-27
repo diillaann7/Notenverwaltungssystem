@@ -26,4 +26,6 @@ public class GradeController {
     public List<Grade> getGradesForStudent(@PathVariable Long studentId) {
         return gradeService.getGradesForStudent(studentId);
     }
+
+
 }
